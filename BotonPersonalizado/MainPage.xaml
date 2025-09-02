@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BotonPersonalizado"
+             x:Class="BotonPersonalizado.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+
+            <!-- Botón rectangular reutilizable -->
+            <local:RectangularButton x:Name="ReusableRectBtn"
+                                    Text="Click me"
+                                    BackgroundColor="Blue"
+                                    TextColor="White"
+                                    HorizontalOptions="Fill" />
+
+            <local:RectangularButton x:Name="ReusableRectBtn1"
+                        Text="Click me"
+                        BackgroundColor="Blue"
+                        TextColor="White"
+                        HorizontalOptions="Fill" />
+
+
+            <local:EllipseButton x:Name="ReusableEllipBtn"                        
+                                 HorizontalOptions="Fill" 
+                                 />
+
+            <local:EllipseButton x:Name="ReusableEllipBtn2"                        
+                     HorizontalOptions="Fill" 
+                     />
+
+            <!-- Botón hexagonal reutilizable -->
+            <local:HexagonButton x:Name="ReusableHexagonBtn"
+                                 HorizontalOptions="Center" />
+
+            <local:HexagonButton x:Name="ReusableHexagonBtn2"
+                     HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
